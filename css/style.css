@@ -1,0 +1,54 @@
+/**
+ * Add box sizing to everything
+ * @link http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ */
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+/**
+ * Layout
+ */
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	font-size: 112.5%;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 40em;
+	width: 88%;
+	color: #333;
+}
+
+.tabs {
+	margin-top: 0;
+	padding-left: 0;
+	border-bottom: 1px solid #eee;
+}
+
+.tab {
+	display: inline-block;
+	margin-right: 10px;
+	list-style-type: none;
+}
+
+.tab-toggle {
+	display: block;
+	padding: 10px 0;
+	color: #888;
+	text-decoration: none;
+}
+
+.tab-toggle:hover,
+.tab-toggle.is-selected {
+	color: #333;
+	border-bottom: 2px solid #1fc341;
+}
+
+.js-tab .tab-pane {
+	display: none;
+}
+
+.js-tab .tab-pane.is-selected {
+	display: block;
+}
